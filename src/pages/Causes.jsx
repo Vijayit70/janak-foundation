@@ -1,4 +1,5 @@
 import Reveal from '../components/Reveal'
+import useBootstrapCarousel from '../hooks/useBootstrapCarousel'
 
 const focusSlides = [
   [
@@ -80,6 +81,9 @@ const gallerySlides = [
 ]
 
 export default function Causes() {
+  const causesCarouselRef = useBootstrapCarousel({ interval: 5000 })
+  const galleryCarouselRef = useBootstrapCarousel({ interval: 4000 })
+
   return (
     <>
       {/* Page Hero */}
@@ -114,6 +118,7 @@ export default function Causes() {
           </div>
 
           <div
+            ref={causesCarouselRef}
             id="causesCarousel"
             className="carousel slide"
             data-bs-ride="carousel"
@@ -174,6 +179,7 @@ export default function Causes() {
           </p>
 
           <div
+            ref={galleryCarouselRef}
             id="galleryCarousel"
             className="carousel slide"
             data-bs-ride="carousel"

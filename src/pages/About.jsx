@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
+import useBootstrapCarousel from '../hooks/useBootstrapCarousel'
 
 const team = [
   {
@@ -11,11 +12,6 @@ const team = [
     name: 'Mr. Jayhind Pal',
     role: 'Co-Founder',
     bio: "Mr. Jayhind Pal co-founded Janak Foundation to support underprivileged communities. He focuses on skill development and women's empowerment programs.",
-  },
-  {
-    name: 'Mr. Ajay Tiwari',
-    role: 'Managing Director',
-    bio: 'Mr. Ajay Tiwari serves as the Managing Director of Janak Foundation, overseeing programs and partnerships to expand our reach and impact across rural communities. He focuses on strategic growth, program delivery, and stakeholder engagement to ensure sustainable outcomes.',
   },
 ]
 
@@ -77,6 +73,9 @@ const objectives = [
 ]
 
 export default function About() {
+  const teamCarouselRef = useBootstrapCarousel({ interval: 6000 })
+  const missionCarouselRef = useBootstrapCarousel({ interval: 6000 })
+
   return (
     <>
       {/* Page Hero */}
@@ -145,6 +144,7 @@ export default function About() {
 
         {/* Team Slider */}
         <div
+          ref={teamCarouselRef}
           id="teamSlider"
           className="carousel slide text-center"
           data-bs-ride="carousel"
@@ -184,6 +184,54 @@ export default function About() {
           </div>
         </div>
 
+        {/* Vision / Mission Slider */}
+        <div className="container">
+          <div
+            ref={missionCarouselRef}
+            id="aboutSlider"
+            className="carousel slide carousel-fade text-center"
+            data-bs-ride="carousel"
+          >
+            <h1 className="fw-bold mb-4">KNOW MORE ABOUT US</h1>
+
+            <div className="carousel-inner">
+              {visionMission.map((item, i) => (
+                <div
+                  key={item.title}
+                  className={'carousel-item' + (i === 0 ? ' active' : '')}
+                >
+                  <h4 className="fw-bold mb-3">{item.title}</h4>
+                  <p className="px-lg-5 text-dark">{item.text}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="carousel-arrows">
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#aboutSlider"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon p-3"
+                  aria-hidden="true"
+                />
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#aboutSlider"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon p-3"
+                  aria-hidden="true"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </Reveal>
 
       {/* Core Values */}

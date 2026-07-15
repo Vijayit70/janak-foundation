@@ -1,6 +1,31 @@
 import { Link } from 'react-router-dom'
 import CauseCard from '../components/CauseCard'
 import Reveal from '../components/Reveal'
+import useBootstrapCarousel from '../hooks/useBootstrapCarousel'
+
+const heroSlides = [
+  {
+    image: '/images/hero-children.jpg',
+    title: 'Together, We Can Make a Difference',
+    text: 'Join hands with us to empower communities through education, environment, and equality.',
+    primary: { to: '/causes', label: 'Get Involved' },
+    secondary: { to: '/donate', label: 'Donate Now' },
+  },
+  {
+    image: '/images/tree.jpg',
+    title: 'Volunteer With Us',
+    text: 'Be a part of community projects and make a real impact.',
+    primary: { to: '/volunteer', label: 'Join Us' },
+    secondary: { to: '/causes', label: 'Our Projects' },
+  },
+  {
+    image: '/images/banner.jpg',
+    title: 'Support Our Causes',
+    text: 'Your donations help us reach more people in need.',
+    primary: { to: '/donate', label: 'Donate Now' },
+    secondary: { to: '/contact', label: 'Contact' },
+  },
+]
 
 const focusAreas = [
   {
@@ -26,33 +51,74 @@ const focusAreas = [
 ]
 
 export default function Home() {
+  const carouselRef = useBootstrapCarousel({ interval: 5000 })
+
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className="hero-section text-center"
-        style={{
-          background: "url('/images/hero-children.jpg') no-repeat center center",
-          backgroundSize: 'cover',
-          minHeight: '80vh',
-        }}
+      {/* Hero Carousel */}
+      <div
+        ref={carouselRef}
+        id="heroCarousel"
+        className="carousel slide carousel-fade"
+        data-bs-ride="carousel"
       >
-        <div className="container d-flex flex-column justify-content-center align-items-center h-100">
-          <span className="eyebrow justify-content-center">Janak Foundation</span>
-          <h1 className="display-5 fw-bold">Together, We Can Make a Difference</h1>
-          <p className="lead mt-2">
-            Join hands with us to empower communities through education, environment, and equality.
-          </p>
-          <div className="d-flex gap-3 mt-3">
-            <Link to="/causes" className="btn btn-join">
-              Get Involved
-            </Link>
-            <Link to="/donate" className="btn btn-outline-light">
-              Donate Now
-            </Link>
-          </div>
+        <div className="carousel-indicators">
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to={i}
+              className={i === 0 ? 'active' : ''}
+              aria-current={i === 0 ? 'true' : undefined}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
         </div>
-      </section>
+
+        <div className="carousel-inner">
+          {heroSlides.map((slide, i) => (
+            <div
+              key={slide.title}
+              className={'carousel-item hero-slide' + (i === 0 ? ' active' : '')}
+              style={{ backgroundImage: `url('${slide.image}')` }}
+            >
+              <div className="carousel-caption d-flex flex-column justify-content-center align-items-center">
+                <span className="eyebrow">Janak Foundation</span>
+                <h1 className="display-5 fw-bold">{slide.title}</h1>
+                <p className="lead">{slide.text}</p>
+                <div className="d-flex gap-3 mt-3">
+                  <Link to={slide.primary.to} className="btn btn-join">
+                    {slide.primary.label}
+                  </Link>
+                  <Link to={slide.secondary.to} className="btn btn-outline-light">
+                    {slide.secondary.label}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
 
       {/* Organic wave divider */}
       <div className="hero-wave">

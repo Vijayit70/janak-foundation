@@ -101,6 +101,7 @@ export default function Volunteer() {
       availability: form.availability.join(', '),
       why: form.why,
       skills: form.skills,
+      time: new Date().toLocaleString(),
     }
 
     try {
