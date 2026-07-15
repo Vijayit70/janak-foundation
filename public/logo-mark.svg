@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="96" fill="#6d1f2b" />
+  <circle cx="100" cy="100" r="84" fill="none" stroke="#e8a317" stroke-width="3" />
+  <circle cx="100" cy="100" r="73" fill="none" stroke="#f4c430" stroke-width="1.5" opacity="0.85" />
+  <circle cx="159.4" cy="159.4" r="7" fill="#b85c2e" />
+  <text
+    x="100"
+    y="106"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="78"
+    letter-spacing="-3"
+    fill="#fbf7ee"
+  >JF</text>
+</svg>
