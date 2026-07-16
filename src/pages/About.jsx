@@ -6,12 +6,17 @@ const team = [
   {
     name: 'Mr. Vijay Tiwari',
     role: 'Founder',
-    bio: 'Mr. Vijay Tiwari is the visionary behind Janak Foundation. With a mission to uplift communities through education, healthcare, and empowerment, he has been a driving force in social change.',
+    bio: 'Mr. Vijay Tiwari is the visionary behind Janak Foundation, founded with a deep-rooted belief that every individual — regardless of background — deserves access to education, healthcare, and the opportunity to live with dignity. Driven by firsthand experience with the challenges faced by underprivileged communities in Tikamgarh district, he established the Foundation to create lasting, sustainable change through grassroots action. Under his leadership, Janak Foundation has grown into a trusted platform for education, womens empowerment, environmental conservation, and community welfare — with Vijay continuing to be a hands-on driving force in every initiative the organization undertakes.',
   },
   {
     name: 'Mr. Jayhind Pal',
     role: 'Co-Founder',
-    bio: "Mr. Jayhind Pal co-founded Janak Foundation to support underprivileged communities. He focuses on skill development and women's empowerment programs.",
+    bio: "Mr. Jayhind Pal co-founded Janak Foundation alongside a shared vision of empowering underserved communities through practical, sustainable support. He focuses closely on the Foundation's skill development and women's empowerment programs, working directly with local families to build pathways toward self-reliance and economic independence. Known for his grassroots approach and genuine connection with the communities he serves, Jayhind plays a key role in shaping programs that are not just well-intentioned, but truly responsive to the everyday realities people face in rural Madhya Pradesh.",
+  },
+  {
+    name: 'Mr. Ajay Tiwari',
+    role: 'Managing Director',
+    bio: 'Mr. Ajay Tiwari serves as the Managing Director of Janak Foundation, overseeing the organizations day-to-day operations and long-term strategic direction. With a strong commitment to transparent and effective governance, he ensures that every program — from education initiatives to healthcare outreach — translates into real, measurable impact for the communities the Foundation serves. Ajay works closely with the founding team to build partnerships, strengthen operational systems, and expand the Foundations reach across rural Madhya Pradesh, always keeping the needs of the people at the center of every decision.',
   },
 ]
 
