@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import CauseCard from '../components/CauseCard'
 import Reveal from '../components/Reveal'
@@ -54,6 +54,15 @@ export default function Volunteer() {
   const [form, setForm] = useState(initialForm)
   const [status, setStatus] = useState(null) // { type: 'success' | 'danger', message }
   const [submitting, setSubmitting] = useState(false)
+  const nameInputRef = useRef(null)
+
+  const scrollToFormAndFocus = (e) => {
+    e.preventDefault()
+    document
+      .getElementById('volunteerForm')
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    setTimeout(() => nameInputRef.current?.focus(), 600)
+  }
 
   const toggleCheckbox = (field, value) => {
     setForm((prev) => {
@@ -146,7 +155,7 @@ export default function Volunteer() {
             Make a difference in the lives of children and communities by
             contributing your time and skills.
           </p>
-          <a href="#volunteerForm" className="btn btn-learn mt-3">
+          <a href="#volunteerForm" className="btn btn-learn mt-3" onClick={scrollToFormAndFocus}>
             <span>Sign Up Now</span>
           </a>
         </div>
@@ -196,6 +205,7 @@ export default function Volunteer() {
                     Full Name
                   </label>
                   <input
+                    ref={nameInputRef}
                     type="text"
                     className="form-control"
                     id="name"
