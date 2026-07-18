@@ -3,7 +3,7 @@ import Reveal from '../components/Reveal'
 const bankDetails = [
   { label: 'Bank Name', value: 'IPPB Bank' },
   { label: 'Banking Name', value: 'Vijay Tiwari (Janak Foundation)' },
-  { label: 'Account Number', value: '0274410087590' },
+  { label: 'Account Number', value: 'XXXXXXXX7590' },
   { label: 'IFSC Code', value: 'IPOS0000001' },
 ]
 
