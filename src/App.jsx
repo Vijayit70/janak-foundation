@@ -10,7 +10,7 @@ import Work from './pages/Work'
 import Volunteer from './pages/Volunteer'
 import Contact from './pages/Contact'
 import Donate from './pages/Donate'
-import Gallery from "./pages/Gallery"
+import Gallery from './pages/Gallery'
 import useDisableInspect from './hooks/useDisableInspect'
 
 // Scrolls to top on every route change, and to a hash target if present
