@@ -89,9 +89,9 @@ export default function Gallery() {
 
         <div className="cards">
           {cards.map((c, i) => (
-            <div className="card" key={i}>
+            <div className="g-card" key={i}>
               <img src={c.img} alt={c.title} />
-              <div className="card-body">
+              <div className="g-card-body">
                 <h3>{c.title}</h3>
                 <p>{c.desc}</p>
               </div>
