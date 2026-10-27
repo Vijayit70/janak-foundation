@@ -10,6 +10,7 @@ import Work from './pages/Work'
 import Volunteer from './pages/Volunteer'
 import Contact from './pages/Contact'
 import Donate from './pages/Donate'
+import Gallery from "./pages/Gallery"
 import useDisableInspect from './hooks/useDisableInspect'
 
 // Scrolls to top on every route change, and to a hash target if present
@@ -45,6 +46,7 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer />
       <WhatsAppButton />
