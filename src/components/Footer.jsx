@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="col-lg-4 col-md-6 mb-4">
             <h5 className="mb-3 d-flex align-items-center gap-2">
               <img src="/logo-mark.svg" alt="" width="34" height="34" />
-              <span>Janak Foundation</span>
+              <span>Janak Initiative</span>
             </h5>
             <p>Address: Village Khajree, District Tikamgarh, Madhya Pradesh</p>
             <p>
