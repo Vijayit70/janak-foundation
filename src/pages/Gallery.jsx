@@ -50,6 +50,7 @@ export default function Gallery() {
 
   return (
     <section className="gallery" id="gallery">
+      <h2 className="gallery-heading">Our Gallery</h2>
      
       {/* ===== SLIDER (sabse pehle) ===== */}
       <div className="slider">
