@@ -53,7 +53,7 @@ export default function Work() {
         <h1 className="fw-bold mb-3">We work for all...</h1>
         <div className="work-description">
           <p className="px-md-5 px-3 text-dark">
-            At Janak Foundation, we offer a comprehensive range of services
+            At Janak Initiative, we offer a comprehensive range of services
             designed to address the diverse needs of the communities we
             serve. Our goal is to create sustainable and impactful solutions
             that empower individuals and promote long-term development.
