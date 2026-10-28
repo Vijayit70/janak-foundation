@@ -6,6 +6,7 @@ const quickLinks = [
   { to: '/causes', label: 'Causes' },
   { to: '/work', label: 'What We Do' },
   { to: '/volunteer', label: 'Volunteer' },
+  { to: '/gallery', label: 'Gallery' },
   { to: '/contact', label: 'Contact Us' },
 ]
 
@@ -89,7 +90,7 @@ export default function Footer() {
       <div className="footer-bottom-bar py-3 text-center">
         <p className="mb-0 footer-bottom-content">
           <span className="fb-item fb-made">
-            &copy; 2026 <span className="text-orange">Tech Vijay</span>. All
+            &copy; 2026 <span className="text-orange">CodeInBrain</span>. All
             rights reserved.
           </span>
         </p>
