@@ -38,7 +38,7 @@ export default function Navbar() {
           <img src="/logo-mark.svg" alt="" width="42" height="42" />
           <span>
             <span style={{ color: '#f4c430' }}>Janak</span>{' '}
-            <span style={{ color: '#fbf7ee' }}>Foundation</span>
+            <span style={{ color: '#fbf7ee' }}>Initiative</span>
           </span>
         </Link>
 
