@@ -80,13 +80,25 @@ export default function Gallery() {
         </div>
       </div>
 
-      {/* ===== CARDS (slider ke neeche, heading ke saath) ===== */}
+            {/* ===== VIDEO + CARDS ===== */}
       <div className="cards-section">
         <h2 className="cards-heading">Our Work & Activities</h2>
         <p className="cards-subheading">
           Janak Foundation ke dwara kiye gaye kuch mukhya karya
         </p>
 
+        {/* VIDEO (upar) */}
+        <div className="video-box">
+          <video
+            src="/videos/gallery.mp4"
+            controls
+            muted
+            loop
+            playsInline
+          />
+        </div>
+
+        {/* 4 CARDS (neeche) */}
         <div className="cards">
           {cards.map((c, i) => (
             <div className="g-card" key={i}>
