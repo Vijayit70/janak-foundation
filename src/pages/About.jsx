@@ -6,28 +6,28 @@ const team = [
   {
     name: 'Mr. Vijay Tiwari',
     role: 'Founder',
-    bio: 'Mr. Vijay Tiwari is the visionary behind Janak Foundation, founded with a deep-rooted belief that every individual — regardless of background — deserves access to education, healthcare, and the opportunity to live with dignity. Driven by firsthand experience with the challenges faced by underprivileged communities in Tikamgarh district, he established the Foundation to create lasting, sustainable change through grassroots action. Under his leadership, Janak Foundation has grown into a trusted platform for education, womens empowerment, environmental conservation, and community welfare — with Vijay continuing to be a hands-on driving force in every initiative the organization undertakes.',
+    bio: 'Mr. Vijay Tiwari is the visionary behind Janak Initiative, founded with a deep-rooted belief that every individual — regardless of background — deserves access to education, healthcare, and the opportunity to live with dignity. Driven by firsthand experience with the challenges faced by underprivileged communities in Tikamgarh district, he established the Foundation to create lasting, sustainable change through grassroots action. Under his leadership, Janak Foundation has grown into a trusted platform for education, womens empowerment, environmental conservation, and community welfare — with Vijay continuing to be a hands-on driving force in every initiative the organization undertakes.',
   },
   {
-    name: 'Mr. Jayhind Pal',
+    name: 'Mr. Aniket Pathak',
     role: 'Co-Founder',
-    bio: "Mr. Jayhind Pal co-founded Janak Foundation alongside a shared vision of empowering underserved communities through practical, sustainable support. He focuses closely on the Foundation's skill development and women's empowerment programs, working directly with local families to build pathways toward self-reliance and economic independence. Known for his grassroots approach and genuine connection with the communities he serves, Jayhind plays a key role in shaping programs that are not just well-intentioned, but truly responsive to the everyday realities people face in rural Madhya Pradesh.",
+    bio: "Mr. Aniket Pathak co-founded Janak Initiative alongside a shared vision of empowering underserved communities through practical, sustainable support. He focuses closely on the Foundation's skill development and women's empowerment programs, working directly with local families to build pathways toward self-reliance and economic independence. Known for his grassroots approach and genuine connection with the communities he serves, Aniket plays a key role in shaping programs that are not just well-intentioned, but truly responsive to the everyday realities people face in rural Madhya Pradesh.",
   },
   {
     name: 'Mr. Ajay Tiwari',
     role: 'Managing Director',
-    bio: 'Mr. Ajay Tiwari serves as the Managing Director of Janak Foundation, overseeing the organizations day-to-day operations and long-term strategic direction. With a strong commitment to transparent and effective governance, he ensures that every program — from education initiatives to healthcare outreach — translates into real, measurable impact for the communities the Foundation serves. Ajay works closely with the founding team to build partnerships, strengthen operational systems, and expand the Foundations reach across rural Madhya Pradesh, always keeping the needs of the people at the center of every decision.',
+    bio: 'Mr. Ajay Tiwari serves as the Managing Director of Janak Initiative, overseeing the organizations day-to-day operations and long-term strategic direction. With a strong commitment to transparent and effective governance, he ensures that every program — from education initiatives to healthcare outreach — translates into real, measurable impact for the communities the Foundation serves. Ajay works closely with the founding team to build partnerships, strengthen operational systems, and expand the Foundations reach across rural Madhya Pradesh, always keeping the needs of the people at the center of every decision.',
   },
 ]
 
 const visionMission = [
   {
     title: 'OUR VISION',
-    text: 'We envision a nation where every individual regardless of their background has access to education, healthcare, equality, and the opportunity to live with dignity. Janak Foundation aims to create a self-reliant society free from poverty and discrimination, where compassion and empowerment light the way for every family.',
+    text: 'We envision a nation where every individual regardless of their background has access to education, healthcare, equality, and the opportunity to live with dignity. Janak Initiative aims to create a self-reliant society free from poverty and discrimination, where compassion and empowerment light the way for every family.',
   },
   {
     title: 'OUR MISSION',
-    text: 'At Janak Foundation, our mission is to uplift underprivileged communities through education, skill development, health awareness, and women empowerment. We work tirelessly to provide basic necessities, promote sustainable livelihoods, and inspire social change ensuring that hope and opportunity reach every corner of society.',
+    text: 'At Janak Initiative, our mission is to uplift underprivileged communities through education, skill development, health awareness, and women empowerment. We work tirelessly to provide basic necessities, promote sustainable livelihoods, and inspire social change ensuring that hope and opportunity reach every corner of society.',
   },
 ]
 
@@ -118,7 +118,7 @@ export default function About() {
               <h2 className="fw-bold mb-3">About Our Foundation</h2>
               <p className="lead text-dark mb-3">
                 Founded with a mission to bring hope and support to
-                underprivileged families, Janak Foundation has been working
+                underprivileged families, Janak Initiative has been working
                 tirelessly to provide essential resources including food,
                 clothing, school supplies, and emotional support to those who
                 need it most.
