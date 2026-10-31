@@ -43,7 +43,14 @@ html {
 body {
   color: var(--ink);
   font-family: var(--font-body);
-  background-color: var(--cream);
+ background: linear-gradient(
+  160deg,
+  oklch(97% 0.022 190) 0%,
+  oklch(97% 0.022 190) 45%,
+  oklch(95.5% 0.045 85) 100%
+);
+background-attachment: fixed;
+min-height: 100vh;
   line-height: 1.65;
   overflow-x: hidden;
 }
